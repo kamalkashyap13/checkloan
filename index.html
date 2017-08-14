@@ -74,7 +74,7 @@
     background-image: url('loan1.png');
 
       /* Full height */
-      height: calc(100% - 230px);
+
 
       /* Create the parallax scrolling effect */
       margin-top: 0px;
@@ -89,28 +89,20 @@
 
 
 .one_one{
-  display: inline-block;
-  margin-top: 300px;
-  height: 300px;
-  margin-left: 20%;
-  margin-right: 20%;
-  width: 60%;
+
+
+  padding-top: 18%;
+  padding-bottom: 12%;
+  padding-left: 5%;
+  padding-right: 5%;
   opacity: 0.8;
   filter: alpha(opacity=50);
-
-
-}
-
-h2, h1{
-  color: white;
-
   text-align: center;
-
-}
-h2{
-  font-size: 24px;
 }
 
+#marquee{
+  font-size:24px;
+}
 
 
 
@@ -120,9 +112,8 @@ h2{
 
 
 
-
-
-
+  </style>
+  <style>
 .last{
 			width:100%;
 			padding-top:0px;
@@ -180,60 +171,6 @@ h2{
 
 }
   </style>
-  <style>
-  .flex-container {
-    display: -webkit-flex;
-    display: flex;
-    text-align: center;
-    margin-left: 50px;
-    margin-right: 50px;
-    width: (100% - 100px);
-    height: 180px;
-    background-color: black;
-    opacity: 1;
-
-  }
-
-  .flex-item {
-      background-color: cornflowerblue;
-
-      margin: 15px;
-      color: white;
-
-  }
-
-  .item1 {
-      -webkit-flex: 1;
-      flex: 1;
-      background-color: #B92855;
-      background-color: #b92855;
-      opacity: 0.9;
-      filter: alpha(opacity=100);
-  }
-
-  .item2 {
-      -webkit-flex: 1;
-      flex: 1;
-  }
-
-  .item3 {
-      -webkit-flex: 1;
-      flex: 1;
-  }
-  .item4 {
-      -webkit-flex: 1;
-      flex: 1;
-  }
-  .itemhead1 {
-    padding-top: 5px;
-  }
-  .itemmain1{
-    padding-top: 10px;
-  }
-  .itemfooter{
-      padding-top: 25px;
-  }
-  </style>
 </head>
 <body>
   <!--Navbar-->
@@ -255,7 +192,7 @@ h2{
           <ul class="dropdown-menu">
             <li><a href="#">Car Loan</a></li>
             <li><a href="#">House Loan</a></li>
-            <li><a href="#">Education Loan</a></li>
+            <li><a href="#">Business Loan</a></li>
           </ul>
         </li>
         <li class="dropdown">
@@ -275,17 +212,15 @@ h2{
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">FINANCIAL SERVICES<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Company/LLP Formation</a></li>
-            <li><a href="#">Din Services</a></li>
+            <li><a href="#">Company Formation</a></li>
+            <li><a href="#">ITR/TDS Filing</a></li>
             <li><a href="#">GST Registration</a></li>
-            <li><a href="#">ITR Filing</a></li>
-            <li><a href="#">TDS Return filing</a></li>
             <li><a href="#">GST Return filing</a></li>
           </ul>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">CONTACT US</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
 
       </ul>
 
@@ -298,12 +233,9 @@ h2{
 
     <div class="one_one">
       <h1>Hi, we're Careforloan</h1>
-      <h2><marquee>LET US HELP YOU FIND WHAT YOU NEED </marquee> </h2>
+      <h2 id="marquee"><marquee>LET US HELP YOU FIND WHAT YOU NEED </marquee> </h2>
     </div>
-
-
 </div>
-
 <div class="footer last">
     <div class="footer_ele foot_head">
       <h3> Connect with Careforloan</h3>
@@ -322,20 +254,12 @@ h2{
 
 
     <div class="footer_ele foot_bottom">
-      © Copyright 2017, Loanbazzar Pvt Ltd.
+      © Copyright 2017, Careforloan Pvt Ltd.
 
     </div>
     <br>
 </div>
-<script>
-//selection1
-$(".selection1").click(function(){
-  //flex-container
-    $(".flex-container").css("height", "60px");
-    $(".selection1").css("background-color", "white");
-    $(".selection1").css("color", "black");
-     $(".itemmain1").hide();
-});
-</script>
+
+
 </body>
 </html>
